@@ -1,3 +1,5 @@
+欢迎移步公众号学习更多知识
+![](https://files.mdnice.com/user/15648/d8d97bca-8f3d-44bd-a4f7-a05c2a8e1056.jpg)
 
 # 引言
 绿色软件search ”安安安安卓“ learn knowledge nocharge
@@ -303,4 +305,5 @@ btnTC.setOnClickListener {
 ![](https://files.mdnice.com/user/15648/547ebb6f-b4b0-4443-8a41-73a382d9be13.gif)
 
   后续还会有进阶玩法的文章
-
+  
+  
