@@ -20,8 +20,6 @@
         android:name="com.mage.navigationdemo.OriginFragment"
         android:label="fragment_origin"
         tools:layout="@layout/fragment_origin" >
-        <action
-            android:id="@+id/action_originFragment_to_desActivity"
-            app:destination="@id/desActivity" />
+
     </fragment>
 </navigation>
