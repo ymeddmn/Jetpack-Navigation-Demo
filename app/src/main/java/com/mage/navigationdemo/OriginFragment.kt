@@ -5,8 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import androidx.navigation.fragment.findNavController
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,6 +17,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class OriginFragment : Fragment() {
+    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -34,17 +33,20 @@ class OriginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val content = inflater.inflate(R.layout.fragment_origin, container, false)
-        val btn = content.findViewById<Button>(R.id.btn_todistination)
-        btn.setOnClickListener {
-            val findNavController = findNavController()
-            findNavController.navigate(R.id.destiationFragment)
-        }
-
-        return content
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_origin2, container, false)
     }
 
     companion object {
+        /**
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
+         *
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment OriginFragment.
+         */
+        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             OriginFragment().apply {

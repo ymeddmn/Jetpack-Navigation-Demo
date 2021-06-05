@@ -2,21 +2,26 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/jjj"
+    android:id="@+id/navigation1"
     app:startDestination="@id/originFragment">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.mage.navigationdemo.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/desActivity"
+        android:name="com.mage.navigationdemo.DesActivity"
+        android:label="activity_des"
 
+        tools:layout="@layout/activity_des" />
     <fragment
         android:id="@+id/originFragment"
         android:name="com.mage.navigationdemo.OriginFragment"
         android:label="fragment_origin"
         tools:layout="@layout/fragment_origin" >
         <action
-            android:id="@+id/action_originFragment_to_destiationFragment"
-            app:destination="@id/destiationFragment" />
+            android:id="@+id/action_originFragment_to_desActivity"
+            app:destination="@id/desActivity" />
     </fragment>
-    <fragment
-        android:id="@+id/destiationFragment"
-        android:name="com.mage.navigationdemo.DestiationFragment"
-        android:label="fragment_destiation"
-        tools:layout="@layout/fragment_destiation" />
 </navigation>
