@@ -1,7 +1,8 @@
-package com.mage.navigationdemo
+package com.mage.navigationdemo.includenesting
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mage.navigationdemo.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -3,18 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/mainFragment">
-    <include app:graph="@navigation/navigation_login"/>
-
+    app:startDestination="@id/mainFragment2">
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/mainFragment2"
         android:name="com.mage.navigationdemo.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_tologinfragment"
-            app:destination="@id/navigation_login"
-            />
+            android:id="@+id/action_main_tologin"
+            app:destination="@id/main_loginactivity" />
     </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.mage.navigationdemo.includenesting.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+
+    <navigation
+        android:id="@+id/main_loginactivity"
+        app:startDestination="@id/loginFragment2">
+
+
+        <fragment
+            android:id="@+id/loginFragment2"
+            android:name="com.mage.navigationdemo.includenesting.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" />
+    </navigation>
+
 
 </navigation>

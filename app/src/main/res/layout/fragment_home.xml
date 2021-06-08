@@ -11,9 +11,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="跳转到home查看include标签实现的嵌套效果" />
-    <Button
-        android:id="@+id/btn_tologin2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="使用navigation标签实现嵌套图" />
+
 </LinearLayout>
