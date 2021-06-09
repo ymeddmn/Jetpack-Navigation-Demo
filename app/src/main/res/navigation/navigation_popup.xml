@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navigation_popup">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_popup"
+    app:startDestination="@id/popUpToTestActivity">
+
+<!--    <fragment-->
+<!--        android:id="@+id/popUpFragment"-->
+<!--        android:name="com.mage.navigationdemo.PopUpFragment"-->
+<!--        android:label="fragment_pop_up"-->
+<!--        tools:layout="@layout/fragment_pop_up" />-->
+
+    <activity
+        android:id="@+id/popUpToTestActivity"
+        android:name="com.mage.navigationdemo.PopUpToTestActivity"
+        android:label="activity_pop_up_to_test"
+        tools:layout="@layout/activity_pop_up_to_test" />
+    <fragment
+        android:id="@+id/popUpFragment"
+        android:name="com.mage.navigationdemo.PopUpFragment"
+        android:label="fragment_pop_up"
+        tools:layout="@layout/fragment_pop_up" />
 
 </navigation>

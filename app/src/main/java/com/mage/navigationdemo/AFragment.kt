@@ -39,7 +39,7 @@ class AFragment : Fragment() {
         }
 
         content.findViewById<Button>(R.id.btn_toPopFragment).setOnClickListener {
-
+            findNavController().navigate(R.id.navigation_popup)
         }
         return content
     }
