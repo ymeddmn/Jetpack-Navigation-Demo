@@ -19,6 +19,5 @@
         android:name="com.mage.navigationdemo.BFragment"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" />
-    <include app:graph="@navigation/navigation_popup" />
 
 </navigation>

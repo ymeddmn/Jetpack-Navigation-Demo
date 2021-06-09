@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pop.PopUpFragment">
+    tools:context=".pop.PopBFragment">
 
     <Button
-        android:id="@+id/btn_topopafragment"
+        android:id="@+id/btn_returnpopupfragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="跳到PopAFragment" />
+        android:text="回到popupfragment" />
 
 </FrameLayout>
