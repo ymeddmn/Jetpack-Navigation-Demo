@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DestiationFragment">
+    tools:context=".BFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="目的地" />
-
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:text="山暝听猿愁，沧江急夜流。\n\n\n
+风鸣两岸叶，月照一孤舟。\n\n\n
+建德非吾土，维扬忆旧游。\n\n\n
+还将两行泪，遥寄海西头。" />
 </FrameLayout>

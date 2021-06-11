@@ -11,10 +11,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [DestiationFragment.newInstance] factory method to
+ * Use the [BFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class DestiationFragment : Fragment() {
+class BFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
@@ -30,13 +30,14 @@ class DestiationFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_destiation, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_b, container, false)
     }
 
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            DestiationFragment().apply {
+            BFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
